@@ -1,0 +1,14 @@
+program Loterias;
+
+uses
+  Vcl.Forms,
+  Core.Principal in 'View\Core.Principal.pas' {fmrPrincipal};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfmrPrincipal, fmrPrincipal);
+  Application.Run;
+end.

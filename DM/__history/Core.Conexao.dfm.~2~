@@ -1,0 +1,13 @@
+object DataModule1: TDataModule1
+  Height = 180
+  Width = 345
+  PixelsPerInch = 120
+  object FDConnection: TFDConnection
+    Left = 79
+    Top = 53
+  end
+  object FDPhysFBDriverLink: TFDPhysFBDriverLink
+    Left = 207
+    Top = 53
+  end
+end

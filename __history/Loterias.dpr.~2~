@@ -1,0 +1,16 @@
+program Loterias;
+
+uses
+  Vcl.Forms,
+  Core.Principal in 'View\Core.Principal.pas' {fmrPrincipal},
+  Core.Conexao in 'DM\Core.Conexao.pas' {DataModule1: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfmrPrincipal, fmrPrincipal);
+  Application.CreateForm(TDataModule1, DataModule1);
+  Application.Run;
+end.
